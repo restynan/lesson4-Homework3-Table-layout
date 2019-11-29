@@ -17,8 +17,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         add.setOnClickListener{
-            if(version.text.toString()!=null&&codeName.text.toString()!=null) {
-                // Create a new table row.
+            if(version.text.toString().isNullOrBlank()&&codeName.text.toString().isNullOrEmpty()) {
+                Toast.makeText(this, "Please Enter Android version and code name", Toast.LENGTH_LONG).show()
+
+            }
+            else{
                 var tableRow = TableRow(getApplicationContext())
 
 // Set new table row layout parameters.
@@ -52,9 +55,7 @@ class MainActivity : AppCompatActivity() {
 // Finally add the created row row into layout
                 tab.addView(tableRow) // id from Layout_file
             }
-            else{
-                Toast.makeText(this, "Please Enter Android version and code name", Toast.LENGTH_LONG).show()
-            }
+
         }
 
     }
