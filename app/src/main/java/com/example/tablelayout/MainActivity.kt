@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         add.setOnClickListener{
-            if(version.text.toString().isNullOrBlank()&&codeName.text.toString().isNullOrEmpty()) {
+            if(version.text.toString().isNullOrEmpty()||codeName.text.toString().isNullOrEmpty()) {
                 Toast.makeText(this, "Please Enter Android version and code name", Toast.LENGTH_LONG).show()
 
             }
@@ -54,6 +54,9 @@ class MainActivity : AppCompatActivity() {
 
 // Finally add the created row row into layout
                 tab.addView(tableRow) // id from Layout_file
+                version.text=null
+                codeName.text=null
+
             }
 
         }
