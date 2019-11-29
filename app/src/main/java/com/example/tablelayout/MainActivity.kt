@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
                 layoutParams.setMargins(5, 5, 5, 5)
                 tableRow.setLayoutParams(layoutParams)
 
-                // tableRow.setBackgroundColor(Color.parseColor("#D81B60"))
 
 
+//create textview
                 var Tv1 = TextView(this)
 
                 Tv1.text = version.text.toString()
@@ -52,8 +52,10 @@ class MainActivity : AppCompatActivity() {
                 tableRow.addView(Tv1, 0)
                 tableRow.addView(Tv2, 1)
 
-// Finally add the created row row into layout
+// Finally add the created row into layout
                 tab.addView(tableRow) // id from Layout_file
+
+                // clear the  version and codeName Textboxes
                 version.text=null
                 codeName.text=null
 
