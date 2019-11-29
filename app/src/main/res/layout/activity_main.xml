@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="0,1"
+    android:id="@+id/tab"
+    tools:context=".MainActivity">
+
+
+    <TableRow android:layout_height="150dp">
+
+
+        <EditText
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:ems="10"
+            android:hint="Enter Android Version"
+
+            android:textSize="20sp"/>
+
+
+    </TableRow>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TableRow>
+        <EditText
+            android:id="@+id/codeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:ems="10"
+            android:hint="Enter Android Code Name"
+            android:textSize="20sp"
+
+            />
+    </TableRow>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TableRow>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Add" />
+
+
+    </TableRow>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+
+
+    <TableRow>
+
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_span="1"
+            android:text="Version"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:background="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_margin="5dp"
+            android:layout_span="1"
+            android:text="Android"
+            android:textSize="20sp"
+
+            />
+
+
+
+
+
+
+    </TableRow>
+
+
+
+</TableLayout>
+</ScrollView>
